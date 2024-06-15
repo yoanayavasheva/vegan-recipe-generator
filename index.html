@@ -7,34 +7,46 @@
     <title>Vegan Recipe Generator</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-big">
       <header>
         <h1>Vegan Recipe Generator</h1>
-        <h3>Powered by Shecodes AI</h3>
+        <h2>Powered by Shecodes AI</h2>
       </header>
-
-      <main>
-        <form action="">
-          <input type="text" placeholder="Enter a cuisine" />
-          <input type="submit" />
-        </form>
-        <div id="recipe">
-          Recipe name
-          <br />
-          Ingedients
-          <br />
-          Instructions
-        </div>
-      </main>
+      <div class="container-small">
+        <main>
+          <form action="">
+            <input
+              type="text"
+              placeholder="Enter a cuisine"
+              class="instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div id="recipe" class="recipe">
+            Vegan Onion
+            <br />
+            Ingedients:
+            <br />
+            - 2 tbsp olive oil 1 large onion (180g)
+            <br />
+            Instructions:
+            <br />
+            STEP 1 : Heat the oil in a large pan set over a high heat and fry
+            the onion, stirring occasionally, for 5 mins until starting to
+            soften and colour.
+          </div>
+          <h3>Good luck!🧑‍🍳</h3>
+        </main>
+      </div>
+      <footer>
+        This project was coded by <strong>Yoana Yavasheva</strong> and is
+        <a
+          href="https://github.com/yoanayavasheva/vegan-recipe-generator"
+          target="_blank"
+          >open-sourced on Github</a
+        >
+      </footer>
     </div>
-    <footer>
-      This project was coded by <strong>Yoana Yavasheva</strong> and is
-      <a
-        href="https://github.com/yoanayavasheva/vegan-recipe-generator"
-        target="_blank"
-        >open-sourced on Github</a
-      >
-    </footer>
     <script src="src/index.js"></script>
   </body>
 </html>
