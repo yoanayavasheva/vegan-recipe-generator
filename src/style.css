@@ -1,0 +1,17 @@
+body {
+  background: rgb(255, 218, 148);
+}
+h1 {
+  color: green;
+  text-align: center;
+}
+
+h3 {
+  color: grey;
+  text-align: center;
+}
+
+.container {
+  background: rgb(232, 255, 252);
+  border-radius: 30px;
+}
