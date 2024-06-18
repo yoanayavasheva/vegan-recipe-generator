@@ -8,8 +8,9 @@ header {
   margin: 10px;
 }
 
-h1 {
+h1.page-title {
   margin: 0;
+  font-size: 40px;
 }
 
 h2 {

@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>Vegan Recipe Generator</title>
   </head>
   <body>
     <div class="container-big">
       <header>
-        <h1>Vegan Recipe Generator</h1>
+        <h1 class="page-title">Vegan Recipe Generator</h1>
         <h2>Powered by Shecodes AI</h2>
+        <h1>🥗</h1>
       </header>
       <div class="container-small">
         <main>
@@ -19,12 +21,16 @@
             <input
               type="text"
               placeholder="Enter a cuisine"
+              autofocus
+              required
+              autocomplete="off"
               class="instructions"
+              id="user-instructions"
             />
             <input type="submit" class="submit-button" />
           </form>
           <div id="recipe" class="recipe"></div>
-          <h3>Good luck!🧑‍🍳</h3>
+          <h3 id="good-luck-message"></h3>
         </main>
       </div>
       <footer>
