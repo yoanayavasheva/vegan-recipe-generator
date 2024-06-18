@@ -13,7 +13,9 @@ function displayRecipe(response) {
 function generateRecipe(event) {
   event.preventDefault();
   let recipeElement = document.querySelector("#recipe");
-  recipeElement.innerHTML = "Generating a recipe for you, please wait...";
+  recipeElement.classList.remove("hidden");
+  recipeElement.innerHTML = `
+    <span class="blink">⏳</span> Generating a recipe for you, please wait...`;
 
   let instructionsInput = document.querySelector("#user-instructions");
 

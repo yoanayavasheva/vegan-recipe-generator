@@ -26,7 +26,13 @@ h3 {
 }
 form {
   display: flex;
-  padding: 10px 20px 30px;
+  padding: 10px 20px 0px;
+}
+
+.hint {
+  margin: 8px 40px 30px;
+  font-size: 13px;
+  opacity: 0.7;
 }
 
 .instructions {
@@ -83,9 +89,23 @@ form {
   line-height: 2;
 }
 
+.hidden {
+  display: none;
+}
+
 footer {
   font-size: 13px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   margin-top: 20px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 1s step-start 0s infinite;
 }
